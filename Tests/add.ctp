@@ -2,7 +2,7 @@
 <h1>Test Requirements</h1>
 <?php
     echo $this->Form->create('Test');
-    echo $this->Form->input('sample_request_id', array('type'=>'int'));
+    echo $this->Form->input('test_id', array('type'=>'int', 'label' => 'Sample Request Number'));
     echo $this->Form->input('date');
     echo $this->Form->input('sample_code');
     echo $this->Form->input('product_name');
