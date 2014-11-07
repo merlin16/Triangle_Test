@@ -1,4 +1,4 @@
-<table
+<table 
     <tr>
         <th>Panelist Number</th>
          <th>Same_1</th>
@@ -15,3 +15,5 @@
     <?php endforeach; ?>
     <?php unset($value); ?>    
 </table>
+
+<!--Needs be fixed to create the table for the total panelists entered
