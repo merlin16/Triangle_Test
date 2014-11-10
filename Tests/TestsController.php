@@ -21,14 +21,14 @@ class TestsController extends AppController{
             } 
             else 
             {
-                ///Coment
+                ///Comment
             } 
         }      
     }
     
     public function view()
     {
-        $mainArray = [];  
+        $numbers = [];  
         
         //Generate table with Panelist Id, Same_1, Same_2 and Odd 
         //for the total panelists entered in the form
@@ -43,16 +43,16 @@ class TestsController extends AppController{
                 $random = rand(100, 999);
                
                //If number is already in array it will not be entered. (Avoid number repetition)
-                if(!in_array($random, $array) && !in_array($random, $mainArray))
+                if(!in_array($random, $array) && !in_array($random, $numbers))
                 {
                     $array[] = $random;
                     $count++;
                 }
             }
 
-            for($j=0; $j < 3; $j++)
+            for($j=0; $j<3; $j++)
             {
-                $mainArray[] = $array[$j];
+                $numbers[] = $array[$j];
             }  
 
             //Add id, same_1, same_2 and odd to panelist table
