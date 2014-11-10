@@ -2,6 +2,7 @@
 
 //Still in change. Not finished yet
 class TestsController extends AppController{
+    
     public $helpers = array('Html', 'Form'); 
     public $components = array('Session');
     
